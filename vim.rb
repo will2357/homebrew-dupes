@@ -11,21 +11,21 @@ class Vim < Formula
 
   def install
     system "./configure", "--prefix=#{prefix}",
-                          "--mandir=#{man}",
-                          #"--enable-gui=no",
-  		                    #"--with-x",
-			                    "--enable-clipboard=yes",
-			                    "--enable-xterm_clipboard=yes",
-			                    "--enable-xterm_save=yes",
-                          #"--disable-nls",
-                          #"--enable-multibyte",
-                          #"--with-tlib=ncurses",
-			                    #"--enable-perlinterp",
-			                    #"--enable-pythoninterp",
-			                    #"--enable-rubyinterp",
-                          "--enable-cscope",
-			                    #"--with-ruby-command=#{`which ruby`.sub(/\n/,'')}",
-                          "--with-features=huge"
+			  "--mandir=#{man}",
+    			  #"--enable-gui=no",
+    			  #"--with-x",
+    			  "--enable-clipboard=yes",
+    			  "--enable-xterm_clipboard=yes",
+    			  "--enable-xterm_save=yes",
+    			  #"--disable-nls",
+    			  #"--enable-multibyte",
+    			  #"--with-tlib=ncurses",
+    			  #"--enable-perlinterp",
+    			  #"--enable-pythoninterp",
+    			  #"--enable-rubyinterp",
+    			  "--enable-cscope",
+    			  #"--with-ruby-command=#{`which ruby`.sub(/\n/,'')}",
+    			  "--with-features=huge"
     system "make"
     system "make install"
   end
